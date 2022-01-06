@@ -1,0 +1,22 @@
+@api = http://localhost:5000
+
+POST {{api}}/usuario/creaUsuario
+Content-Type: application/json
+
+        {
+            "nombre": "profe1",
+            "email": "p@fds.cc",
+            "clave": "qwer"
+        }
+
+###
+
+POST {{api}}/usuario/iniciaSesion
+Content-Type: application/json
+
+        {
+            "email": "p@fds.cc",
+            "clave": "qwer"
+        }
+
+###
