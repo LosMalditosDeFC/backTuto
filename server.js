@@ -4,8 +4,8 @@ var app  = express();
 
 var mongoose = require('mongoose');
 
-// var cors = require('cors');
-// app.use(cors());
+var cors = require('cors');
+app.use(cors());
 
 app.use(express.urlencoded({
     extended:false
@@ -14,8 +14,10 @@ app.use(express.urlencoded({
 app.use(express.json())
 
 var UsuarioRouter = require('./controllers/usuario');
+var SesionesRouter = require('./controllers/sesiones');
 
 app.use('/usuario',UsuarioRouter);
+app.use('/sesiones',SesionesRouter);
 
 var url='mongodb://127.0.0.1:27017/DBTUTO';
 

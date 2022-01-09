@@ -1,12 +1,15 @@
 @api = http://localhost:5000
 
-POST {{api}}/usuario/creaUsuario
+POST {{api}}/usuario/creaUsuarioAlumno
 Content-Type: application/json
 
         {
-            "nombre": "profe1",
-            "email": "p@fds.cc",
-            "clave": "qwer"
+            "id":"1",
+            "nombre": "a1",
+            "apellido": "aa",
+            "email": "a1@uni.pe",
+            "clave": "qwer",
+            "telefono":"123"
         }
 
 ###
